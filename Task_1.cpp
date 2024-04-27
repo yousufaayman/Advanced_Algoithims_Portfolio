@@ -25,11 +25,12 @@ void rmDuplicates(char arrayOfChar[], int &lenArrChar)
 int main()
 {
     char arrayOfChar[] = {'a', 'b', 'a', 'c', 'd', 'b', 'c'};
-    int lenArrChar  = sizeof(arrayOfChar) / sizeof(arrayOfChar[0]);
+    int lenArrChar = sizeof(arrayOfChar) / sizeof(arrayOfChar[0]);
 
     rmDuplicates(arrayOfChar, lenArrChar);
 
-    cout << endl << "Array After Removing Duplicates: ";
+    cout << endl
+         << "Array After Removing Duplicates: ";
     for (int i = 0; i < lenArrChar; i++)
     {
         cout << arrayOfChar[i] << " ";
